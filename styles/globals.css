@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --verde-petroleo: #1C7C64;
+  --azul-profundo: #1B3D4B;
+  --dourado-claro: #E8C96A;
+  --branco-institucional: #F9FAFB;
+  --cinza-suave: #6B6B6B;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--branco-institucional);
+  color: var(--azul-profundo);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .transition-all-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
